@@ -49,18 +49,26 @@ echo "PI为:" . PI . "<br />";
 且值只能是标量,即可以是 整型 浮点型  布尔型 null 字符串等。
 在定义后，无论在那定义，都可以直接调用，没有作用域。定义后不可以再赋值一直存在内存中，不能被销毁。
 所以常量的值不能是 数组, 对象 , 资源*/
-$p="";
+$p = "";
 //定义圆周率的两种取值
-define("PI1",3.14);
-define("PI2",3.142);
+define("PI1", 3.14);
+define("PI2", 3.142);
 //定义值的精度
 $height = "中";
 //根据精度返回常量名，将常量变成了一个可变的常量
-if($height == "中"){
+if ($height == "中") {
     $p = "PI1";
-}else if($height == "低"){
+} else if ($height == "低") {
     $p = "PI2";
 }
-$r=1;
-$area= constant($p)*$r*$r;
-echo $area. "<br />";
+$r = 1;
+$area = constant($p) * $r * $r;
+echo $area . "<br />";
+
+/*判断常量是否被定义*/
+define("PI1", 3.14);
+$p = "PI1";
+$is1 = defined($p);
+$is2 = defined("PI2");
+var_dump($is1);//bool(true)
+var_dump($is2);//bool(false)
