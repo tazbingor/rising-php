@@ -14,35 +14,52 @@ echo $c . "<br />";
 //其实是引向了同一块儿内存空间
 
 
-/*比较运算符*/
-$a = 1;
-$b = "1";
-var_dump($a == $b); // bool(true)
-echo "<br />";
-var_dump($a === $b);//bool(false)
-echo "<br />";
-var_dump($a != $b); // bool(false)
-echo "<br />";
-var_dump($a <> $b); // bool(false)
-echo "<br />";
-var_dump($a !== $b); //bool(true)
-echo "<br />";
-var_dump($a < $b); // bool(false)
-echo "<br />";
-
-$c = 5;
-var_dump($a < $c); // bool(false)
-echo "<br />";
-var_dump($a > $c); // bool(false)
-echo "<br />";
-var_dump($a <= $c); // bool(true)
-echo "<br />";
-var_dump($a >= $c); // bool(true)
-echo "<br />";
-var_dump($a >= $b); // bool(true)
-echo "<br />";
+///*比较运算符*/
+//$a = 1;
+//$b = "1";
+//var_dump($a == $b); // bool(true)
+//echo "<br />";
+//var_dump($a === $b);//bool(false)
+//echo "<br />";
+//var_dump($a != $b); // bool(false)
+//echo "<br />";
+//var_dump($a <> $b); // bool(false)
+//echo "<br />";
+//var_dump($a !== $b); //bool(true)
+//echo "<br />";
+//var_dump($a < $b); // bool(false)
+//echo "<br />";
+//
+//$c = 5;
+//var_dump($a < $c); // bool(false)
+//echo "<br />";
+//var_dump($a > $c); // bool(false)
+//echo "<br />";
+//var_dump($a <= $c); // bool(true)
+//echo "<br />";
+//var_dump($a >= $c); // bool(true)
+//echo "<br />";
+//var_dump($a >= $b); // bool(true)
+//echo "<br />";
 
 //三元运算符
-$a = 78;//成绩
-$b = $a >=60?"及格":"不及格";
-echo $b;
+//$a = 78;//成绩
+//$b = $a >=60?"及格":"不及格";
+//echo $b;
+
+$a = TRUE; //A同意
+$b = TRUE; //B同意
+$c = FALSE; //C反对
+$d = FALSE; //D反对
+//咱顺便复习下三元运算符
+echo ($a and $b) ? "通过" : "不通过"; //不通过
+echo "<br />";
+echo ($a or $c) ? "通过" : "不通过"; //不通过
+echo "<br />";
+echo ($a xor $c xor $d) ? "通过" : "不通过"; //不通过
+echo "<br />";
+echo !$c ? "通过" : "不通过"; //通过
+echo "<br />";
+echo $a && $d ? "通过" : "不通过"; //不通过
+echo "<br />";
+echo $b || $c || $d ? "通过" : "不通过"; // 通过
