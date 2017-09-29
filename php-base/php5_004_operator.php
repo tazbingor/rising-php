@@ -12,3 +12,32 @@ echo $c . "<br />";
 $a = "八荒六合唯我独尊功";
 echo $c . "<br />";
 //其实是引向了同一块儿内存空间
+
+
+/*比较运算符*/
+$a = 1;
+$b = "1";
+var_dump($a == $b); // bool(true)
+echo "<br />";
+var_dump($a === $b);//bool(false)
+echo "<br />";
+var_dump($a != $b); // bool(false)
+echo "<br />";
+var_dump($a <> $b); // bool(false)
+echo "<br />";
+var_dump($a !== $b); //bool(true)
+echo "<br />";
+var_dump($a < $b); // bool(false)
+echo "<br />";
+
+$c = 5;
+var_dump($a < $c); // bool(false)
+echo "<br />";
+var_dump($a > $c); // bool(false)
+echo "<br />";
+var_dump($a <= $c); // bool(true)
+echo "<br />";
+var_dump($a >= $c); // bool(true)
+echo "<br />";
+var_dump($a >= $b); // bool(true)
+echo "<br />";
