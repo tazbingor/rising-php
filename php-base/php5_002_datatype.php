@@ -15,16 +15,16 @@
 //echo $m5 = memory_get_usage() - $m1 - $m2 - $m3 - $m4; //600
 
 //boolean
-$flag = true;
-echo $flag; //1
-echo var_dump($flag); //bool(true)
-$flag = false;
-echo $flag;//不输出
-echo var_dump($flag); //bool(false)
-$intA = 1;
-$intB = 2;
-echo var_dump($intA == $intB);//bool(false)
-echo "<br />";
+//$flag = true;
+//echo $flag; //1
+//echo var_dump($flag); //bool(true)
+//$flag = false;
+//echo $flag;//不输出
+//echo var_dump($flag); //bool(false)
+//$intA = 1;
+//$intB = 2;
+//echo var_dump($intA == $intB);//bool(false)
+//echo "<br />";
 
 //integer整型
 $data_int1 = 123;
