@@ -15,7 +15,7 @@ $students = array(
 
 //使用循环结构遍历数组,获取学号和姓名
 
-foreach($students as  $v){
-    echo $v;//输出（打印）姓名
+foreach($students as $key =>$v){
+    echo $key.":".$v;//输出（打印）学号：姓名
     echo "<br />";
 }
