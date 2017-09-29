@@ -33,3 +33,19 @@ do {
     $sum = $sum + $num;//前进步长
 } while ($num == 6);
 echo "do...while例子执行完毕，前进：" . $sum . "<br />";
+
+//99乘法表
+echo "<table width='600' border='1'>";
+for ($j = 9; $j >= 1; $j--) {
+
+    echo "<tr>";
+
+    for ($i = 1; $i <= $j; $i++) {
+        echo "<td>{$i}*{$j}=" . ($i * $j) . "</td>";
+    }
+    echo "</tr>";
+
+}
+
+echo "</table>";
+
