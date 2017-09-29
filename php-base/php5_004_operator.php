@@ -66,15 +66,24 @@ echo $c . "<br />";
 
 //字符串链接运算符
 $a = "张先生";
-$tip = $a.",你好";
+$tip = $a . ",你好";
 
 $b = "东边日出西边雨";
 $b .= ",道是无晴却有晴";
 
 $c = "东边日出西边雨";
-$c = $c.",道是无晴却有晴";
+$c = $c . ",道是无晴却有晴";
 
-echo  $tip."<br />";
-echo  $b."<br />";
-echo  $c."<br />";
+echo $tip . "<br />";
+echo $b . "<br />";
+echo $c . "<br />";
 
+//运算符训练
+$maxLine = 4; //每排人数
+$no = 17;//学生编号
+$line = ceil($no / $maxLine);
+$row = $no % $maxLine ? $no % $maxLine : $maxLine;
+
+
+echo "编号<b>" . $no . "</b>的座位在第<b>" . $line . "</b>排第<b>" . $row . "</b>个位置";
+//编号17的座位在第5排第1个位置
