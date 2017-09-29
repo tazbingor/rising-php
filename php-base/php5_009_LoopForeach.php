@@ -1,21 +1,21 @@
 <?php
-//增强for
-$students = array(
-    '2010' => '令狐冲',
-    '2011' => '林平之',
-    '2012' => '曲洋',
-    '2013' => '任盈盈',
-    '2014' => '向问天',
-    '2015' => '任我行',
-    '2016' => '冲虚',
-    '2017' => '方正',
-    '2018' => '岳不群',
-    '2019' => '宁中则',
-);//10个学生的学号和姓名，用数组存储
-
-//使用循环结构遍历数组,获取学号和姓名
-
-foreach ($students as $key => $v) {
-    echo $key . ":" . $v;//输出（打印）学号：姓名
-    echo "<br />";
+//循环嵌套
+$totalMoney = 0;//总工资
+$basicMoney = 300;//基本工资
+$sex = "男";
+$noHouse = TRUE; //是否有房
+$houseMoney = 150;//住房补贴
+$isPregnancy = TRUE; //是否怀孕
+$pregnancyMoney = 100;//怀孕补贴
+if ($sex == "男") {
+    $totalMoney = $basicMoney + 0;// 男的没奖金
+    if ($noHouse) {
+        $totalMoney = $totalMoney + $houseMoney;
+    }
+} else if ($sex == "女") {
+    $totalMoney = $basicMoney + 300;// 女的有奖金300元
+    if ($isPregnancy) {
+        $totalMoney = $totalMoney + $pregnancyMoney;
+    }
 }
+echo $totalMoney;
