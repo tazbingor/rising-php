@@ -41,3 +41,8 @@ var_dump($a >= $c); // bool(true)
 echo "<br />";
 var_dump($a >= $b); // bool(true)
 echo "<br />";
+
+//三元运算符
+$a = 78;//成绩
+$b = $a >=60?"及格":"不及格";
+echo $b;
