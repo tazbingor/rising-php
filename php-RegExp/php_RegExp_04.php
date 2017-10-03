@@ -17,3 +17,9 @@ $p = '/\d{3}\-\d{8}/';
 $str = "我的电话是010-12345678";
 preg_match($p, $str, $match);
 echo $match[0]; //结果为：010-12345678
+
+//请修改变量p的正则表达式，使他能够匹配str中的姓名
+$p = '/(\w+\s\w+)/';
+$str = "name:steven jobs";
+preg_match($p, $str, $match);
+echo $match[1]; //结果为：steven jobs
